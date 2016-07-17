@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/position.css">
 	<title>Zazor</title>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="container">
 			<header>
-				<div class="form_up clearfix"> <!--telefon-->
-					<div class="telefon">
+			 	<div class="form_up">
+					<div class="telefon"><!--telefon-->
 						<img src="img/telefon.png" alt="icon_fon">
 						<span>(044)123-45-67 (044)567-89-10</span>
 					</div>
@@ -20,14 +21,14 @@
 						<input type="text" name="login" required placeholder="логин">
 						<input type="password" name="password" required placeholder="пароль">
 						<input class="registration" type="submit" name="enter" value="вход">
-						<input class="registration" type="submit" name="#" value="регистрация">
+						<a class="registration" href="#">регистрация</a>
 						<a class="not_mem" href="#">зaбыли пароль?</a>
 					</form>
 					<div class="small_navi ">  <!--navigation menu-->
 						<ul class="navi clearfix">
-							<li class="home"><a href="#"></a></li>
-							<li class="map"><a href="#"></a></li>
-							<li class="mail"><a href="#"></a></li>
+							<li><a class="home" href="#"></a></li>
+							<li><a class="map" href="#"></a></li>
+							<li><a class="mail" href="#"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -46,70 +47,135 @@
 					</ul>
 				</nav>
 				<section class="search clearfix"> <!--search block-->
-					<div class="car"> <!--left block--><!--search for car-->
+					<div class="search_car"> <!--left block--><!--search for car-->
 						<h1>Поиск по автомобилю</h1>
-						<form class="clearfix" action="#" method="GET">
-							<fieldset class="right_form"> <!--choice for disks-->
-								<legend>Диски:</legend>
-								<label for="avto_d_id"> Марка <span class="avto">авто:</span></label>
-								<select name="car_mark" id="avto_d_id">
-									  <option value="Toyota">Toyota</option>
-									  <option value="KIA">KIA</option>
-									  <option value="Nissan">Nissan</option>
-								</select>
-								
-								<label for="avto_model_d_id"> Модель <span class="avto">автомобиля:</span> </label>
-								<select name="car_model" id="avto_model_d_id">
-									  <option value="Camry">Camry</option>
-									  <option value="Corola">Corola</option>
-									  <option value="Avensis">Avensis</option>
-								</select>
-								
-								<label for="avto_year_d_id">Год выпуска <span class="avto">автомобиля:</span></label>
-								<select name="car_year" id="avto_year_d_id">
-									<option value="2014">2014</option>
-								  	<option value="2015">2015</option>
-								  	<option value="2016">2016</option>
-								</select>
-
-								<label for="avto_complect_d_id">Комплектация: </label>
-								<select name="car_complect" id="avto_complect_d_id">
-									  <option value="full avtomat">full avtomat</option>
-									  <option value="tonirovka">tonirovka</option>
-								 </select>
-							</fieldset>
-							
-							<fieldset class="left_form"><!--choice for tires-->
-								<legend>Шины:</legend>
-								<label for="avto_id"> Марка <span class="avto">авто:</span></label>
-									<select name="car_mark" id="avto_id">
-									  	<option value="Toyota">Toyota</option>
-									  	<option value="KIA">KIA</option>
-									  	<option value="Nissan">Nissan</option>
-									</select><br>
-
-									<label for="avto_model_id"> Модель <span class="avto">автомобиля:</span> </label>
-									<select name="car_model" id="avto_model_id">
-									  <option value="Camry">Camry</option>
-									  <option value="Corola">Corola</option>
-									  <option value="Avensis">Avensis</option>
-									</select><br>
+						<form action="#" method="GET">
+							<div class="form_car clearfix">
+								<fieldset class="form_car_disk"> <!--choice for disks-->
+									<legend>Диски:</legend>
+										
+										<div class="disk_car_mark">
+											<div class="disk_car_1 clearfix">
+												<label for="avto_d_id">
+												<span class="bold_title">Марка&nbsp;</span>
+												<span class="norm_title">авто:</span></label>
+											</div>
+																			
+											<select name="car_mark" id="avto_d_id">
+												<option value="Toyota">Toyota</option>
+												<option value="KIA">KIA</option>
+												<option value="Nissan">Nissan</option>
+											</select>
+										</div>
 									
-									<label for="avto_year_id">Год выпуска <span class="avto">автомобиля:</span></label>
-									<select name="car_year" id="avto_year_id">
-									  <option value="2014">2014</option>
-									  <option value="2015">2015</option>
-									  <option value="2016">2016</option>
-									</select><br>
-
-									<label for="avto_complect_id">Комплектация: </label>
-									<select name="car_complect" id="avto_complect_id">
-									  <option value=" full avtomat">full avtomat</option>
-									  <option value="tonirovka">tonirovka</option>
+										<div class="disk_car_model">
+											<div class="disk_car_1 clearfix">
+												<label for="avto_model_d_id">
+												<span class="bold_title">Модель&nbsp;</span><br>
+												<span class="norm_title">автомобиля:</span>
+												</label>
+											</div>
+										
+											<select name="car_model" id="avto_model_d_id">
+												  <option value="Camry">Camry</option>
+												  <option value="Corola">Corola</option>
+												  <option value="Avensis">Avensis</option>
+											</select>
+										</div>
+									
+										<div class="disk_car_year">
+											<div class="disk_car_1 clearfix">
+												<label for="avto_year_d_id">
+												<span class="bold_title">Год выпуска&nbsp;</span><br>
+												<span class="norm_title">автомобиля:</span>
+												</label>
+											</div>
+										
+											<select name="car_year" id="avto_year_d_id">
+												<option value="2014">2014</option>
+											  	<option value="2015">2015</option>
+											  	<option value="2016">2016</option>
+											</select>
+										</div>
+									
+										<div class="disk_car_complect  clearfix">
+											<div class="disk_car_1 clearfix">
+												<label for="avto_complect_d_id">
+													<span class="bold_title">Комплектация:</span>
+												</label>	
+											</div>
+											<select name="car_complect" id="avto_complect_d_id">
+												  <option value="full avtomat">full avtomat</option>
+												  <option value="tonirovka">tonirovka</option>
+											 </select>
+										</div>
+								</fieldset>
+							
+							<fieldset class="form_car_tire"><!--choice for tires-->
+								<legend>Шины:</legend>
+								
+								<div class="tire_car_mark">
+									<div class="tire_car_1 clearfix">
+										<label for="avto_t_id">
+											<span class="bold_title">Марка&nbsp;</span>
+											<span class="norm_title">авто:</span></label>
+									</div>
+																			
+									<select name="car_mark" id="avto_t_id">
+										<option value="Toyota">Toyota</option>
+										<option value="KIA">KIA</option>
+										<option value="Nissan">Nissan</option>
 									</select>
+								</div>
+									
+								<div class="tire_car_model">
+									<div class="tire_car_1 clearfix">
+										<label for="avto_model_t_id">
+											<span class="bold_title">Модель&nbsp;</span><br>
+											<span class="norm_title">автомобиля:</span>
+										</label>
+									</div>
+										
+									<select name="car_model" id="avto_model_t_id">
+										<option value="Camry">Camry</option>
+										<option value="Corola">Corola</option>
+										<option value="Avensis">Avensis</option>
+									</select>
+								</div>
+									
+								<div class="tire_car_year">
+									<div class="tire_car_1 clearfix">
+										<label for="avto_year_t_id">
+											<span class="bold_title">Год выпуска&nbsp;</span><br>
+											<span class="norm_title">автомобиля:</span>
+										</label>
+									</div>
+										
+									<select name="car_year" id="avto_year_t_id">
+										<option value="2014">2014</option>
+									  	<option value="2015">2015</option>
+									  	<option value="2016">2016</option>
+									</select>
+								</div>
+									
+								<div class="tire_car_complect  clearfix">
+									<div class="tire_car_1 clearfix">
+										<label for="avto_complect_t_id">
+											<span class="bold_title">Комплектация:</span>
+										</label>	
+									</div>
+									<select name="car_complect" id="avto_complect_t_id">
+										<option value="full avtomat">full avtomat</option>
+										<option value="tonirovka">tonirovka</option>
+									</select>
+								</div>
 							</fieldset>
+							</div>
 						</form>
-						<a href="#">поиск...</a>
+						
+						<div class="poisk">
+							<a href="#">поиск...</a>
+						</div>
 					</div>
 
 					<div class="tire"><!--central block--><!--search for tires-->
@@ -119,7 +185,7 @@
 								<select class="tire_size" name="tire_size" id="tire_size_id">
 									<option value="145">145</option>
 									<option value="146">146</option>
-								</select><span>/</span>
+								</select><span>&nbsp;/</span>
 
 								<select  class="tire_size_2" name="tire_size_2" id="tire_size_2_id">
 									<option value="145">145</option>
@@ -141,56 +207,90 @@
 								</ul>
 							</fieldset>
 						</form>
-						<a href="#">поиск...</a>	
+						<div class="poisk">
+							<a href="#">поиск...</a>
+						</div>	
 						
 					</div>
 
 					<div class="disk"><!--right block--><!--search for disks-->
 						<h2>поиск дисков</h2>
+						<form action="#" method="GET">
 						<div class="disk_f clearfix">
-						<form class="clearfix" action="#" method="GET">
-							
-							<fieldset class="disk_right">
-								<label for="DCO_id">ДЦО<br><span class="avto">(диаметр центрального отверстия):</span></label><br>
+							<fieldset class="disk_left">
+								<div class="disk_diametr">
+									<div class="disk_left1 clearfix">
+										<label for="disk_D_id">
+											<span class="bold_title">Диаметр</span>
+											<span  class="norm_title">диска:</span>
+										</label>
+									</div>
+								
+										<select name="disk_D" id="disk_D_id">
+											<option value="14">14</option>
+											<option value="16">16</option>
+										</select>
+								</div>	
+								<div class="disk_otv">	
+									<div class="disk_left1 clearfix"> 
+										<label class="disk_c" for="disk_count_id">
+											<span  class="bold_title"> Количество</span>
+											<span  class="norm_title">крепёжных отверстий:</span>
+										</label>
+									</div>
+									<select name="disk_count" id="disk_count_id">
+										<option value="3">3</option>
+										<option value="6">6</option>
+									</select>
+								</div>
+								<div class="disk_D_otv">
+									<div class="disk_left1 clearfix">
+										<label for="disk_D_otv_id">
+											<span class="bold_title"> Диаметр</span>
+											<span class="norm_title">расположения крепёжных отверстий:</span>
+										</label>
+									</div>
+								
+									<select name="disk_D_otv" id="disk_D_otv_id">
+										<option value="12">12</option>
+										<option value="13">13</option>
+									</select>
+								</div>	
+							</fieldset>
+
+							<fieldset class="disk_right clearfix">
+								<div class="DCO">
+									<label for="DCO_id">
+										<span  class="bold_title">ДЦО</span>
+										<span  class="norm_title">(диаметр центрального отверстия):</span>
+									</label>
+								</div>
 									<select name="disk_DCO" id="DCO_id">
 										<option value="12">12</option>
 										<option value="14">14</option>
-									</select><br>
-								<label for="ET_id">ЕТ<br><span class="avto">(вылет диска):</span></label><br>
+									</select>
+								<div class="ET">
+									<label for="ET_id">
+										<span  class="bold_title">ЕТ</span><span  class="norm_title">(вылет диска):</span>
+									</label>
+								</div>
 									<select name="disk_ET" id="ET_id">
 										<option value="12">12</option>
 										<option value="14">14</option>
 									</select>
 							</fieldset>
-
-							<fieldset class="disk_left">
-								
-								<label for="disk_D_id">Диаметр<span class="avto">диска:</span></label>
-									<select name="disk_D" id="disk_D_id">
-										<option value="14">14</option>
-										<option value="16">16</option>
-									</select><br>
-								<label class="disk_c" for="disk_count_id">Количество<br><span class="avto">крепёжных отверстий:</span></label>
-									<select name="disk_count" id="disk_count_id">
-										<option value="3">3</option>
-										<option value="6">6</option>
-									</select><br>
-								<label for="disk_D_otv_id">Диаметр<br><span class="avto"> расположения крепёжных отверстий:</span></label>
-									<select name="disk_D_otv" id="disk_D_otv_id">
-										<option value="12">12</option>
-										<option value="13">13</option>
-									</select>
-							</fieldset>
+						</div>
 						</form>
-						</div> 
-						<a href="#">поиск...</a>
-					
+						 
+						<div class="poisk">
+							<a href="#">поиск...</a>
+						</div>
 					</div>
 				</section>
 				<section class="central_block clearfix"><!-- katalog block-->
 					<div class="left_block">
 						<div class="hat">
-							<img src="img/icon.png" alt="icon_title" height="5">
+							<img src="img/icon.png" alt="icon_title">
 							<h1>КАТАЛОГ ПРОДУКЦИИ:</h1>
 						</div>
 						<ul class="tovar_name">
@@ -210,7 +310,7 @@
 								</ul></li>
 							<li class="title other"><span>БОЛТЫ</span>
 								<ul>
-									<li><a href="#">Наименование 1</a> </li>
+									<li class="bolt_1"><a href="#">Наименование 1</a> </li>
 									<li><a href="#">Наименование 2</a></li>
 									<li><a href="#">Наименование 3</a></li>
 									<li><a href="#">Наименование 4</a></li>
@@ -227,7 +327,7 @@
 								<div class="white_fon">
 									<img src="img/tire1.png" alt="photo tire">
 								</div>
-									<p class="cost">90.00 грн.</p>
+									<p class="cost">90.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 							
 							<li class="first_line"><figure>
@@ -237,7 +337,7 @@
 								<div class="white_fon">
 									<img src="img/tire2.png" alt="photo tire">
 								</div>
-								<p class="cost">115.00 грн.</p>
+								<p class="cost">115.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 							<li class="first_line"><figure>
@@ -247,7 +347,7 @@
 								<div class="white_fon">
 									<img src="img/tire3.png" alt="photo tire">
 								</div>
-								<p class="cost">393.00 грн.</p>
+								<p class="cost">393.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 							<li class="second_line"><figure>
@@ -257,7 +357,7 @@
 								<div class="white_fon">
 									<img src="img/tire1.png" alt="photo tire">
 								</div>
-									<p class="cost">90.00 грн.</p>
+									<p class="cost">90.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 							
 							<li class="second_line"><figure>
@@ -267,7 +367,7 @@
 								<div class="white_fon">
 									<img src="img/tire2.png" alt="photo tire">
 								</div>
-								<p class="cost">115.00 грн.</p>
+								<p class="cost">115.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 							<li class="second_line"><figure>
@@ -277,7 +377,7 @@
 								<div class="white_fon">
 									<img src="img/tire3.png" alt="photo tire">
 								</div>
-								<p class="cost">393.00 грн.</p>
+								<p class="cost">393.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 							<li class="third_line"><figure>
@@ -287,7 +387,7 @@
 								<div class="white_fon">
 									<img src="img/tire1.png" alt="photo tire">
 								</div>
-									<p class="cost">90.00 грн.</p>
+									<p class="cost">90.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 							
 							<li class="third_line"><figure>
@@ -297,7 +397,7 @@
 								<div class="white_fon">
 									<img src="img/tire2.png" alt="photo tire">
 								</div>
-								<p class="cost">115.00 грн.</p>
+								<p class="cost">115.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 							<li class="third_line"><figure>
@@ -307,7 +407,7 @@
 								<div class="white_fon">
 									<img src="img/tire3.png" alt="photo tire">
 								</div>
-								<p class="cost">393.00 грн.</p>
+								<p class="cost">393.00&nbsp;<span class="uah">грн.</span></p>
 							</figure></li>
 
 						</ul>
@@ -345,14 +445,14 @@
 				</section>
 				
 					<ul class="brendLogo">
-						<li class="toyo"><a href="#"></a></li>
-						<li class="bridg"><a href="#"></a></li>
-						<li class="contin"><a href="#"></a></li>
-						<li class="couper"><a href="#"></a></li>
-						<li class="avon"><a href="#"></a></li>
-						<li class="factory"><a href="#"></a></li>
-						<li class="pirelli"><a href="#"></a></li>
-						<li class="dunlop"><a href="#"></a></li>
+						<li><a class="toyo" href="#"></a></li>
+						<li><a class="bridg" href="#"></a></li>
+						<li><a class="contin" href="#"></a></li>
+						<li><a class="couper" href="#"></a></li>
+						<li><a class="avon" href="#"></a></li>
+						<li><a class="factory" href="#"></a></li>
+						<li><a class="pirelli" href="#"></a></li>
+						<li><a class="dunlop" href="#"></a></li>
 					</ul>
 				
 			</main>

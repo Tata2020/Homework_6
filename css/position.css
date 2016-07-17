@@ -1,0 +1,558 @@
+/*-----small navi -------------*/
+.navi .home {
+	background-position: 0 0;
+}
+.navi .home:hover{
+	background-position: 0 -13px;
+}
+.navi .map {
+	background-position: -12px 0;
+}
+.navi .map:hover{
+	background-position: -12px -13px;
+}
+.navi .mail {
+	background-position: -26px 1px;
+}
+.navi .mail:hover{
+	background-position: -26px -12px;
+}
+/*-----MAIN MENU --------------*/
+nav li:nth-child(2) a{
+	padding: 3px 16px 3px 18px;
+	margin-left: -5px;
+}
+nav li:nth-child(3) a {
+padding: 3px 16px 3px 13px;
+	margin-left: -5px;
+}
+nav li:nth-child(4) a {
+padding: 3px 16px 3px 16px;
+	margin-left: -9px;
+}
+nav li:nth-child(5) a {
+padding: 3px 16px 3px 16px;
+	margin-left: -12px;
+}
+nav li:nth-child(6) {
+	margin: 5px 0px 0px 70px;
+}
+
+/*-----LEFT  PART  FORM  CAR ----*/
+.disk_car_mark {
+	position: relative;
+	overflow: hidden;
+	margin-top: -2px;
+	vertical-align: middle;
+	padding: 0px;
+}
+.disk_car_mark .bold_title {
+	margin-top: 12px;
+}
+.disk_car_mark .norm_title {
+	margin-top: 10px;
+}
+
+.disk_car_model {
+	position: relative;
+	overflow: hidden;
+	margin-top: -1px;
+	vertical-align: middle;
+	padding: 0px;
+}
+.disk_car_model .bold_title {
+	margin-top: 7px;
+}
+.disk_car_model .norm_title {
+	margin-top: -10px;
+}
+
+.disk_car_year {
+	position: relative;
+	overflow: hidden;
+	margin-top: -20px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.disk_car_year .bold_title {
+	margin-top: 6px;
+}
+.disk_car_year .norm_title {
+	margin-top: -11px;
+}
+.disk_car_complect {
+	position: relative;
+	overflow: hidden;
+	margin-top: -22px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.disk_car_complect .bold_title {
+	margin: 11px 0px 0px 1px;
+	letter-spacing: -0.017em;
+}
+
+.form_car_disk .norm_title {
+	line-height: 9px;
+	letter-spacing: -0.01em;
+}
+/*------search block car-----*/
+.tire_car_mark {
+	position: relative;
+	overflow: hidden;
+	margin: 1px 0px 0px 1px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.tire_car_mark .bold_title {
+	margin-top: 12px;
+}
+.tire_car_mark .norm_title {
+	margin-top: 7px;
+}
+
+.tire_car_model {
+	position: relative;
+	overflow: hidden;
+	margin: -1px 0px 0px 1px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.tire_car_model .bold_title {
+	margin-top: 7px;
+}
+.tire_car_model .norm_title {
+	margin-top: -13px;
+	letter-spacing: -0.019em;
+}
+
+.tire_car_year {
+	position: relative;
+	overflow: hidden;
+	margin-top: -20px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.tire_car_year .bold_title {
+	margin: 6px 0px 0px 1px;
+	letter-spacing: -0.08em;
+	
+}
+.tire_car_year .norm_title {
+	margin: -13px 0px 0px 2px;
+	letter-spacing: -0.019em;
+}
+.tire_car_complect {
+	position: relative;
+	overflow: hidden;
+	margin-top: -22px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.tire_car_complect .bold_title {
+	margin: 11px 0px 0px 1px;
+	letter-spacing: 0.00em;
+}
+/*------search block disk ---*/
+.disk_diametr {
+	position: relative;
+	overflow: hidden;
+	margin-top: -2px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.disk_diametr .bold_title {
+	margin: 10px 0px 0px 13px;
+	letter-spacing: 0.1em;
+}
+.disk_diametr .norm_title {
+	margin: -10px 0px 0px 67px;
+	letter-spacing: -0.018em;
+}
+.disk_D_otv {
+	position: relative;
+	overflow: hidden;
+	margin-top: 1px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.disk_D_otv .bold_title {
+	margin: 3px 0px 0px 12px;
+	letter-spacing: 0.13em;
+}
+.disk_D_otv .norm_title {
+	margin: 2px 0px 0px 13px;
+	letter-spacing: 0.03em;
+	line-height: 10px;
+}
+.disk_otv {
+	position: relative;
+	overflow: hidden;
+	margin-top: 2px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.disk_otv .bold_title {
+	margin: 3px 0px 0px 13px;
+	letter-spacing: 0.05em;
+}
+.disk_otv .norm_title {
+	margin: 1px 0px 0px 13px;
+	letter-spacing: 0.05em;
+	line-height: 10px;
+}
+.DCO {
+	position: relative;
+	overflow: hidden;
+	margin-top: 2px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.DCO .bold_title {
+	margin: 8px 0px 0px 1px;
+	letter-spacing: 0.05em;
+	
+}
+.DCO .norm_title {
+	margin: 2px 0px 0px 1px;
+	letter-spacing: -0.02em;
+	line-height: 8px;
+}	
+.ET {
+	position: relative;
+	overflow: hidden;
+	margin-top: 6px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.ET .bold_title {
+	margin: 3px 0px 0px 1px;
+	letter-spacing: 0.05em;
+}
+.ET .norm_title {
+	margin: 1px 0px 0px 1px;
+	letter-spacing: -0.01em;
+	line-height: 8px;
+}	
+	
+/*------main  left block---*/
+.left_block .title:nth-child(1) {
+	margin-left: 47px;
+	padding-top: 1px;
+	letter-spacing: 0.05em;
+}
+.left_block .title:nth-child(2) {
+	margin: 4px 0px 0px 47px;
+	padding: 0px;
+	letter-spacing: 0.04em;
+}
+.left_block .title:nth-child(3) {
+	margin: 4px 0px 0px 47px;
+	padding: 0px;
+	letter-spacing: 0.02em;
+}
+.left_block .title:nth-child(1) span {
+	padding: 6px 74px 4px 29px;
+}
+.left_block .title:nth-child(2) span {
+	padding: 5px 70px 4px 28px;
+}
+
+.left_block .title:nth-child(3) span {
+	padding: 5px 71px 4px 28px;
+}
+.left_block .title .bolt_1 {
+	margin-top: 1px;
+}
+.other span {
+	padding-right: 68px;
+} 
+/*------tovar group -----*/
+.block_Tovar li:nth-child(1) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(1) .brend {
+	margin: 0px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(1) .mark {
+	margin-left: 4px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(1) .cost {
+	margin: 2px 0px 0px 13px;
+	letter-spacing: 0.019em;
+}
+.block_Tovar li:nth-child(1) .white_fon {
+	margin-top: 2px;
+}
+.block_Tovar li:nth-child(1) .white_fon img {
+	margin: 4px 0px 0px 29px;
+}
+.block_Tovar li:nth-child(2) {
+	margin: 2px 0px 0px 2px;
+}
+.block_Tovar li:nth-child(2) .brend {
+	margin: -1px 0px 0px 2px;
+	letter-spacing: 0.01em;
+}
+.block_Tovar li:nth-child(2) .mark {
+	margin-left: 1px;
+	letter-spacing: -0.01em;
+}
+.block_Tovar li:nth-child(2) .cost {
+	margin: 4px 0px 0px 12px;
+	letter-spacing: 0.025em;
+}
+.block_Tovar li:nth-child(2) .white_fon {
+	margin: 1px 0px 0px -1px;
+}
+.block_Tovar li:nth-child(2) .white_fon img {
+	margin: 4px 0px 0px 32px;
+}
+.block_Tovar li:nth-child(3) {
+	margin: 2px 0px 0px 1px;
+}
+.block_Tovar li:nth-child(3) .brend {
+	margin: -2px 0px 0px 5px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(3) .mark {
+	margin: 1px 0px 0px -4px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(3) .cost {
+	margin: 2px 0px 0px 15px;
+	letter-spacing: 0.025em;
+}
+.block_Tovar li:nth-child(3) .white_fon {
+	margin-top: 1px;
+}
+.block_Tovar li:nth-child(3) .white_fon img {
+	margin: 4px 0px 0px 27px;
+}
+.block_Tovar li:nth-child(4) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(4) .brend {
+	margin: -2px 0px 0px -1px;
+	letter-spacing: -0.01em;
+}
+.block_Tovar li:nth-child(4) .mark {
+	margin-left: 5px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(4) .cost {
+	margin: 1px 0px 0px 13px;
+	letter-spacing: 0.025em;
+}
+.block_Tovar li:nth-child(4) .white_fon {
+	margin: 2px 0px 0px 0px;
+}
+.block_Tovar li:nth-child(4) .white_fon img {
+	margin: 4px 0px 0px 30px;
+}
+.block_Tovar li:nth-child(5) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(5) .brend {
+	margin: -5px 0px 0px 4px;
+	letter-spacing: 0.01em;
+}
+.block_Tovar li:nth-child(5) .mark {
+	margin-top: 1px;
+	letter-spacing: -0.01em;
+}
+.block_Tovar li:nth-child(5) .cost {
+	margin: 3px 0px 0px 16px;
+	letter-spacing: 0.018em;
+}
+.block_Tovar li:nth-child(5) .white_fon {
+	margin-top: 2px;
+}
+.block_Tovar li:nth-child(5) .white_fon img {
+	margin: 4px 0px 0px 33px;
+}
+.block_Tovar li:nth-child(6) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(6) .brend {
+	margin: -4px 0px 0px 7px;
+	letter-spacing: -0.015em;
+}
+.block_Tovar li:nth-child(6) .mark {
+	margin: 1px 0px 0px -4px;
+	letter-spacing: 0.001em;
+}
+.block_Tovar li:nth-child(6) .cost {
+	margin: 2px 0px 0px 17px;
+	letter-spacing: 0.025em;
+}
+.block_Tovar li:nth-child(6) .white_fon {
+	margin: 2px 0px 0px 2px;
+}
+.block_Tovar li:nth-child(6) .white_fon img {
+	margin: 3px 0px 0px 28px;
+}
+.block_Tovar li:nth-child(7) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(7) .brend {
+	margin: -1px 0px 0px -2px;
+	letter-spacing: -0.01em;
+}
+.block_Tovar li:nth-child(7) .mark {
+	margin: 1px 0px 0px 5px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(7) .cost {
+	margin: 2px 0px 0px 12px;
+	letter-spacing: 0.017em;
+}
+.block_Tovar li:nth-child(7) .white_fon {
+	margin: 2px 0px 0px 1px;
+}
+.block_Tovar li:nth-child(7) .white_fon img {
+	margin: 5px 0px 0px 29px;
+}
+.block_Tovar li:nth-child(8) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(8) .brend {
+	margin-left: 2px;
+	letter-spacing: 0.01em;
+}
+.block_Tovar li:nth-child(8) .mark {
+	margin: 1px 0px 0px 2px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(8) .cost {
+	margin: 1px 0px 0px 14px;
+	letter-spacing: 0.025em;
+}
+.block_Tovar li:nth-child(8) .white_fon {
+	margin-top: 2px;
+}
+.block_Tovar li:nth-child(8) .white_fon img {
+	margin: 4px 0px 0px 33px;
+}
+.block_Tovar li:nth-child(9) {
+	margin: 0px;
+}
+.block_Tovar li:nth-child(9) .brend {
+	margin-left: 8px;
+	letter-spacing: 0.01em;
+}
+.block_Tovar li:nth-child(9) .mark {
+	margin: 1px 0px 0px -6px;
+	letter-spacing: 0.00em;
+}
+.block_Tovar li:nth-child(9) .cost {
+	margin: 2px 0px 0px 15px;
+	letter-spacing: 0.03em;
+}
+.block_Tovar li:nth-child(9) .white_fon {
+	margin: 1px 0px 0px 1px;
+}
+.block_Tovar li:nth-child(9) .white_fon img {
+	margin: 4px 0px 0px 28px;
+}
+
+/*-------BRENDS LOGO ---------*/
+.brendLogo li:nth-child(1) {
+	margin: -1px 0px;
+}
+.brendLogo li:nth-child(2) {
+	margin: 0px 6px;
+}
+.brendLogo li:nth-child(3) {
+	margin: -1px 4px;
+}
+.brendLogo li:nth-child(4) {
+	margin: -1px 4px;
+}
+.brendLogo li:nth-child(5) {
+	margin: -1px 4px;
+}
+.brendLogo li:nth-child(6) {
+	margin: -1px 6px;
+}
+.brendLogo li:nth-child(7) {
+	margin: -5px 4px;
+}
+.brendLogo li:nth-child(8) {
+	margin: -5px 7px;
+}
+.brendLogo .toyo { 
+	width: 84px;
+	 background-position: 0px 0px; 
+} 
+.brendLogo .toyo:hover {
+	background-position: 0px -40px;
+}
+.brendLogo .bridg { 
+	width: 104px;
+	background-position: -85px 0px; 
+} 
+.brendLogo .bridg:hover {
+	background-position:-85px -41px;
+}
+.brendLogo .contin { 
+	width: 84px;
+	background-position: -192px 0px; 
+} 
+.brendLogo .contin:hover {
+	background-position: -192px -40px;
+}
+.brendLogo .couper { 
+	width: 64px;
+	background-position: -282px 0px; 
+} 
+.brendLogo .couper:hover {
+	background-position: -282px -40px;
+}
+.brendLogo .avon { 
+	width: 78px;
+	background-position: -352px 0px; 
+} 
+.brendLogo .avon:hover {
+	background-position: -352px -40px;
+}
+.brendLogo .factory { 
+	width: 61px;
+	background-position: -440px 0px;  
+} 
+.brendLogo .factory:hover {
+	background-position: -440px -40px;
+}
+.brendLogo .pirelli { 
+	width: 64px;
+	background-position: -502px 4px;  
+} 
+.brendLogo .pirelli:hover {
+	background-position:-502px -36px;
+}	
+.brendLogo .dunlop { 
+	width: 74px;
+	background-position: -568px 4px;
+} 
+.brendLogo .dunlop:hover {
+	background-position: -568px -36px;
+}
+
+/*---- footer items----*/
+footer li:nth-child(1) {
+	padding-right: 1px;
+}
+footer li:nth-child(2) {
+	margin-left: -7px;
+	padding-right: 0px;
+}
+footer li:nth-child(3) {
+	margin-left: -6px;
+	padding-right: 0px;
+}
+footer li:nth-child(4) {
+	margin-left: -2px;
+	padding-right: 0px;
+}

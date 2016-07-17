@@ -24,17 +24,18 @@ body {
 .container {
 	width: 910px;
 	margin: 0px auto;
-	padding-top: 17px;
 	box-sizing: border-box;
   	min-height: 100%;
   	padding-bottom: 110px;
 }
 /*---------HEADER----------*/
 
-
+.form_up {
+	margin-top: 8px;
+}
 .telefon {
-	display: inline;
-	margin: 9px;
+	display: inline-block;
+	margin: 10px 0px 0px 8px;
 }
 .telefon img{
 	width: 21px;
@@ -42,7 +43,6 @@ body {
 }
 .telefon img,
 .reg_form,
-.hat img,
 .right_block input[type="submit"] {
 	vertical-align: middle;
 	border-radius: 100px;
@@ -56,140 +56,123 @@ body {
 }
 .telefon span{
 	line-height: 25px;
-	letter-spacing: 0.27px;
+	letter-spacing: 0.023em;
 	font-family: arial;
 	font-size: 18px;
 	color: #5e696d;
 }
    /*------- AVTORIZATION FORM--------*/
 .reg_form {
-  	display: inline;
+  	display: inline-block;
   	width: 489px;
-  	padding: 2px 4px 5px 4px;
-  	margin: 0px 4px;
+  	padding: 2px 4px 4px 4px;
+  	margin: 5px 0px 0px 11px;
   	vertical-align: middle;
-  	border-radius: 3px;
+  	border-radius: 4px;
   	-webkit-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
  	-moz-box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
 	box-shadow: 3px 3px 3px 0px rgba(150,150,150,0.75);
   	font-family: "Lucida Sans Unicode";
 }
  .reg_form img {
+ 	margin: -1px 0px 0px 3px;
  	vertical-align: middle;
- }
- .reg_form a {
- 	vertical-align: middle;
- 	font-size: 10px;
- 	line-height: 10px;
- 	letter-spacing: 0.15px;
-} 
- .reg_form img {
- 	margin: 0px 0px 0px 2px;
  }
  input {
- 	font-size: 11px;
  	display: inline-block;
- }
- input[type="text"],
- input[type="password"] {
-   	padding: 2px 1px 0px 6px;
-   	line-height: 11px;
+ 	line-height: 11px;
    	color: #97a2a6;
    	border: 1px solid #9ba1a3;
-}
-input[type="text"] {
-	width: 108px;
+ }
+
+ input[type="text"] {
+   	width: 109px;
+   	padding: 3px 0px 0px 3px;
+   	font-size: 11px;
+   	letter-spacing: 0.06em;
 }
 input[type="password"] {
-	width: 104px;
+   	width: 107px;
+   	padding: 3px 0px 0px 6px;
+   	font-size: 11px;
+   	letter-spacing: 0.038em;
 }
-.registration {
+.reg_form input[type="submit"] {
+	border: 0px solid transparent;
+	background: transparent;
+	border-right: 1px solid #fff;
+	padding: 2px 6px 0px 2px;
+}
+
+.reg_form .registration {
+	display: inline-block;
 	color: #fff;
 	font-size: 11px;
-}
-input[type="submit"] {
-	border: 1px solid transparent;
-	background: transparent;
-	line-height: 13px;
-	padding: 0px 5px 0px 2px;
-}
- input[name="enter"]  {
-	border-right: 1px solid #fff;
+	vertical-align: middle;
+	letter-spacing: -0.015em;
+	margin-top: -4px;
 }
 .reg_form .not_mem {
+	display: inline-block;
 	color: #bfbfbf;
-	line-height: 11px;
 	font-size: 12px;
-	padding: 0px 0px 0px 8px;
+	padding-left: 16px;
+	margin-top: -4px;
+	letter-spacing: -0.015em;
+
 }
 .not_mem:hover {
 	text-decoration: underline;
 }
   /*------Navigation menu --------*/
 .small_navi {
-	display: inline;
+	display: inline-block;
+	margin-top: 6px;
+	padding: 0px;
+	font-size: 0px;
 }
 .navi {
 	position:relative;
-	float: right;
-	width: 60px;
-	margin: 2px 6px 0px 0px;
-	padding: 0px 6px 0px 10px;
+	overflow: hidden;
+	margin: -4px 0px 0px 10px;
+	padding: 4px 3px 4px 9px;
 	border: 1px solid #bdc4c7;
+	box-sizing: border-box;
 	border-radius: 20px;
 	-webkit-box-shadow: 3px 3px 3px 0px rgba(188,195,198,1);
     -moz-box-shadow: 3px 3px 3px 0px rgba(188,195,198,1);
 	box-shadow: 3px 3px 3px 0px rgba(188,195,198,1);
 }
 .navi li {
-	margin: 4px 0px 0px 0px;
-	padding:0;
-	position:absolute;
-	top:0;
+	margin-right: 8px;
+	float: left;
 } 
-.navi li,
-.navi a {
-	height: 12px;
-	display:block;
-	padding-right: 12px;
+.navi li:nth-child(1),
+.navi li:nth-child(3) {
+	width: 12px;
 }
-.home {
-	left: 8px;
-	width: 3px;
-	background: url('../img/nav_sprite.png') 0 0;
-}
-.home a:hover{
-	background: url('../img/nav_sprite.png') 0 -18px;
-}
-.map {
-	left: 26px;
-	width: 5px;
-	background: url('../img/nav_sprite.png') 31px 0;
-}
-.map:hover{
-	background: url('../img/nav_sprite.png') 31px -18px;
-}
-.mail {
-	left: 49px;
-	width: 5px;
-	background: url('../img/nav_sprite.png') 15px 0;
-}
-.mail a:hover{
-	background: url('../img/nav_sprite.png') 15px -18px;
+.navi li:nth-child(2) {
+	width: 13px;
+	margin-right: 10px;
 }
 
-.navi img {
-	margin: 5px;
-	vertical-align: middle;
+.navi a {
+	height: 12px;
+	display: block;
+	background: url('../img/nav_sprite.png') 0 0 no-repeat;
+	padding-right: 12px;
 }
+
 /*-------BANNER---------*/
 .banner {
-	margin: 10px 1px 7px 1px;
+	margin-top: 9px;
 }
 /*------MENU--------*/
+main {
+	margin-top: 6px;
+}
 nav {
 	margin: 0;
-	
 	padding: 0;
 	background: #000;
 	border: 1px solid #0d1642;
@@ -212,45 +195,28 @@ nav li {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	font-family: "Lucida Sans Unicode";
-	font-size: 14px;
-	line-height: 25px;
+	
 }
 nav li a {
 	color: #bcc3c6;
-	padding: 3px 16px 3px 20px;
-	margin: 0px -6px 0px -5px;
+	padding: 3px 16px 3px 17px;
+	
 	display: block;
+	font-family: "Lucida Sans Unicode";
+	font-size: 14px;
+	letter-spacing: -0.012em;
+	line-height: 25px;
 }
 nav li a:hover {
 	background: rgba(32,105,136,1);
-background: -moz-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,105,136,1)), color-stop(59%, rgba(17,65,101,1)), color-stop(100%, rgba(12,50,86,1)));
-background: -webkit-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
-background: -o-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
-background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
-background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+	background: -moz-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,105,136,1)), color-stop(59%, rgba(17,65,101,1)), color-stop(100%, rgba(12,50,86,1)));
+	background: -webkit-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+	background: -o-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+	background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
+	background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 59%, rgba(12,50,86,1) 100%);
 	color: #fff;
 	border-radius: 15px;
-}
-nav li:nth-child(2) a{
-padding: 3px 16px 3px 18px;
-	margin: 0px 0px 0px 0px;
-}
-nav li:nth-child(3) a {
-padding: 3px 16px 3px 16px;
-	margin: 0px 0px 0px -5px;
-}
-nav li:nth-child(4) a {
-padding: 3px 16px 3px 16px;
-	margin: 0px 0px 0px -10px;
-}
-nav li:nth-child(5) a {
-padding: 3px 16px 3px 16px;
-	margin: 0px 0px 0px -12px;
-}
-nav li:nth-child(6) {
-	margin: 0px 0px 0px 70px;
 }
 
 .koshik {
@@ -263,81 +229,104 @@ nav li:nth-child(6) {
 }
 .pic:before {
 	content:  " " ;
-position:  absolute;
-top: 7px;
-right: 67px;
-width:  20px;
+	position:  absolute;
+	top: 1px;
+	right: 65px;
+	width:  20px;
 	height: 20px;
-background: url("../img/koshik.png") no-repeat 0 0;
+	background: url("../img/koshik.png") no-repeat 0 0;
 }
 .koshik span {
 	color: #0d5a8f;
 	font-size: 12px;
 	font-family: arial;
-	padding: 2px 0px 3px 6px;
+	padding: 2px 0px 3px 2px;
+}
+.sum {
+	margin-top: 5px;
+	margin-left: 2px;
 }
 .sum span {
-	padding: 2px 0px 3px 14px;
+	padding: 2px 0px 3px 11px;
+	letter-spacing: 0.018em;
 }
 /*----------SECTION SEARCH----------*/
 .search {
 	position: relative;
-	height: 136px;
+	overflow: hidden;
 	margin-top: 12px;
+	height: 146px;
 }
 .search h1 {
 	text-align: center;
+	padding: 2px 4px 0px 0px;
 }
+
 .search h1,
 .tire h2,
 .disk h2 {
 	font-family: arial;
 	font-size: 12px;
 	color: #154467;
-	letter-spacing: 1.28px;
-	line-height: 14px;
+	letter-spacing: 0.12em;
+	line-height: 12px;
 }
-
+.poisk {
+	padding-bottom: 9px;
+	margin-right: 20px;
+	text-align: right;
+	margin-top: -17px;
+}
 .search a {
 	display: inline-block;
 	font-family: arial;
 	font-size: 14px;
 	font-style: italic;
 	color: #154467;
-	text-decoration: underline;
+	line-height: 13px;
+	border-bottom: 2px solid #154467;
 }
-.car a {
-	padding: 6px 10px 7px 141px;
-}
-.tire a {
-	padding: 0px 10px 7px 122px;
-	margin-top: -4px;
-}
-.disk a {
-	padding: 5px 10px 7px 11px;
-}
+
 .search select {
+	display: inline-block;
 	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,1);
     -moz-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,1);
 	box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,1);
-}
-.car select {
-	font-size: 10px;
-	color: #0c3256;
-	line-height: 14px;
+	font-size: 11px;
+	color: #000;
+	border-bottom: 0;
+	padding-bottom: 1px;
 }
 
-.car {
+.search_car {
 	float: left;
 	width: 413px;
 	margin: 0 5px;
 	border: 1px solid #9c9c9d;
-	border-radius: 20px;
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
-	box-shadow: 5px 5px 5px 0px rgba(104,104,104,1);
+	border-radius: 18px;
+	-webkit-box-shadow: 3px 4px 5px 0px rgba(104,104,104,1);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(104,104,104,1);
+	box-shadow: 3px 4px 5px 0px rgba(104,104,104,1);
+}
+.form_car {
+	position: relative;
+	overflow: hidden;
+	margin: -8px 0px 0px 4px;
+}
+.form_car_disk {
+	float: left;
+	width: 184px;
+	margin: -1px 0px 0px 13px;
 }
 
+.form_car legend {
+	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1.28px;
+	line-height: 10px;
+	color: #154468;
+}
 select[name="car_mark"],
 select[name="car_model"],
 select[name="car_complect"] {
@@ -346,51 +335,73 @@ select[name="car_complect"] {
 select[name="car_year"] {
 	width: 58px;
 }
-.car legend {
+.form_car_disk legend {
+	text-align: left;
+	padding: 0px 0px 4px 4px;
+}
+
+.disk_car_1 {
+	float: left;
+	width: 76px;
+}
+.bold_title {
+	display: block;
+	float: left;
+	color: #000;
 	font-family: arial;
 	font-size: 10px;
 	font-weight: bold;
-	letter-spacing: 1.28px;
-	line-height: 10px;
-	color: #154468;
+	line-height: 0.5em;
+	letter-spacing: -0.03em;
 }
-.car .left_form legend {
+.norm_title {
+	display: block;
+	float: left;
+	color: #77858b;
+	font-size: 9px;
+	vertical-align: middle;
+}
+.bold_title {
+	display: block;
+	float: left;
+	color: #000;
+	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 0.5em;
+	letter-spacing: -0.03em;
+}
+.norm_title {
+	display: block;
+	float: left;
+	color: #77858b;
+	font-size: 9px;
+	vertical-align: middle;
+}
+
+/*-----RIGHT  PART  FORM  CAR ----*/
+.form_car_tire {
+	float: left;
+	width: 180px;
+	margin: -3px 0px 0px 20px;
+}
+.form_car_tire legend {
 	text-align: right;
-	padding-right: 10px;
+	margin-top: 1px;
+	padding: 0px 5px 1px 0px;
 }
+.tire_car_1 {
+	float: left;
+	width: 76px;
+}
+
+/*------Search form for tires-----*/
 .tire h2,
 .disk h2 {
 	text-align: left;
+	padding-right: 2px;
 }
 
-.car label,
-.disk label {
-	display: inline-block;
-	width: 70px;
-	color: #010101;
-	font-family: arial;
-	font-size: 10px;
-	line-height: 9px;
-}
-.car span,
-.tire span,
-.disk span {
-	color: #77858b;
-	font-size: 9px;
-}
-
-.right_form {
-	float: left;
-	width: 186px;
-	margin-left: 17px;
-	margin-top: -7px;
-}
-.left_form {
-	float: right;
-	width: 185px;
-	margin-right: 6px;
-	margin-top: -9px;
-}
 .tire,
 .disk {
 	float: left;
@@ -400,18 +411,21 @@ select[name="car_year"] {
     -moz-box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
 	box-shadow: 5px 5px 5px 0px rgba(150,150,150,1);
 }
+.disk {
+	border-radius: 15px;
+}
 
 .tire {
-	width: 193px;
-	margin: -1px 9px;
+	width: 192px;
+	margin: 0px 9px;
 }
 .tire h2 {
 	margin-left: 9px;
-	margin-top: 1px;
+	margin-top: 3px;
 }
 .tire_form {
-	margin-left: 12px;
-	margin-top: 6px;
+	margin-left: 11px;
+	margin-top: 2px;
 }
 .tire_form span {
 	font-size: 12px;
@@ -427,21 +441,29 @@ select[name="car_year"] {
 	width: 42px;
 	color: #010101;
 	font-family: arial;
-	font-size: 10px;
+	font-size: 11px;
+	vertical-align: bottom;
+	letter-spacing: 0.00em;
 	text-align: right;
 	line-height: 10px;
 
 }
 .tire_size {
-	width: 51px;
+	width: 53px;
 	margin-top: -8px;
 }
 .tire .R,
 .season_f legend {
-	font-size: 11px;
+	padding-bottom: 3px;
+	font-size: 10px;
+}
+.season_f legend {
+	display: block;
+	margin: 0;
 }
 .R_select {
 	width: 45px;
+	margin: 7px 0px 0px -1px;
 }
 .tire_size_2 {
 	margin-top: -8px;
@@ -455,56 +477,68 @@ select[name="car_year"] {
 	padding-left: 2px;
 	line-height: 14px;
 	width: 64px;
-	margin-top: 1px;
+	margin-top: 2px;
 }
 .season_ch {
-	margin: -9px 0px 0px 44px;
+	margin: -15px 0px 0px 44px;
 	width: 40px;
 }
 .season_ch input {
-	margin: 0px;
+	margin-top: 1px;
+	
 }
 .season_f .season_ch label {
-	margin-top: -6px;
-	vertical-align: middle;
+	margin-top: -1px;
+	vertical-align: top;
 	width: 65px;
 	text-align: left;
 }
+.tire .poisk {
+	margin-top: -5px;
+}
+/*------form search for disk ----*/
 .disk {
 	width: 265px;
-	margin: -3px 3px 0px 0px;
+	margin-right: 3px;
 }
-.disk_f {
+.disk_f form {
 	position: relative;
-	height: 86px;
+	overflow: hidden;
+	margin-top: 0px;
 }
 .disk_right {
-	float: right;
-	width: 65px;
-	margin: -11px 9px 0px 17px;
-	padding-left: 10px;
+	float: left;
+	width: 67px;
+	margin: -23px 13px 0px 10px;
+	padding-left: 9px;
 	border-left: 1px solid #bdc6ca;
 }
 .disk h2 {
-	margin: 4px 15px 0px 8px;
-	letter-spacing: 0.15em;
+	display: inline-block;
+	margin: -8px 15px 0px 9px;
+	letter-spacing: 0.168em;
+	width: 110px;
 }
+.disk_left1 {
+	float: left;
+	width: 88px;
+}
+
 .disk_right label {
+	display: block;
 	line-height: 0.82em;
 }
 .disk_left {
 	float: left;
-	width: 155px;
-	margin: -86px 15px 0px 16px;
-	padding-bottom: 10px;
+	width: 162px;
+	margin: -2px 0px 0px 3px;
+	padding-bottom: 0px;
 }
-.disk_c {
-	margin: -2px 0px 1px 0px;
-}
+
 select[name="disk_D"] {
 	width: 58px;
-	margin: 0px 0px 0px 14px;
-	padding: 0px 0px 0px 1px;
+	margin-left: 14px;
+	padding-left: 1px;
 }
 select[name="disk_D_otv"] {
 	width: 58px;
@@ -521,7 +555,11 @@ select[name="disk_ET"] {
 select[name="disk_count"] {
 	width: 52px;
 	margin: 12px 0px 0px 14px;
-	padding: 0px 0px 0px 1px;
+	padding-left: 1px;
+}
+.disk .poisk {
+	margin-top: 65px;
+	margin-right: 18px;
 }
 
 /*-------- CENTRAL BLOCK--------*/
@@ -529,13 +567,13 @@ select[name="disk_count"] {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	margin-top: 17px;
+	margin-top: 5px;
 	height: 656px;
 }
  .left_block {
 	float: left;
-	width: 186px;
-	margin-top: -8px;
+	width: 184px;
+	margin-top: -6px;
 }
 
 .right_block {
@@ -544,9 +582,9 @@ select[name="disk_count"] {
 	margin-top: -8px;
 }
 .hat img {
-	width: 20px;
-	height: 20px;
-	margin: 2px 0px 0px 5px;
+	width: 21px;
+	height: 21px;
+	margin: 0px 0px 0px 3px;
 }
 
 .hat {
@@ -560,37 +598,42 @@ select[name="disk_count"] {
 .hat h1 {
 	display: inline-block;
 	color: #114165;
-	font-size: 11px;
+	font-size: 12px;
 	font-family: 'Lucida Sans Unicode';
 	line-height: 25px;
-	letter-spacing: 0.02em;
+	letter-spacing: -0.04em;
+	padding-top: 1px;
+	margin-left: -2px;
 }
+
 .right_block .hat {
 	border-radius: 20px;
 	margin-left: 2px;
-	padding-right: 2px;
+	
 }
 .right_block .hat h1 {
+	margin-top: -3px;
+	margin-left: -1px;
 	font-size: 13px;
 	line-height: 24px;
-	letter-spacing: 0.00em;
+	letter-spacing: -0.02em;
 }
 .tovar_name {
-	margin: 14px 0px 0px 2px;
+	margin: 12px 0px 0px -1px;
+	font-weight: 500;
 }
 .right_block .tovar_name {
-	margin: 14px 0px 0px 17px;
+	margin: 13px 0px 0px 14px;
 }
 .title {
 	position: relative;
 	display: inline-block;
 	line-height: 25px;
-	padding: 1px 0px 0px 47px;
-	letter-spacing: 0.08em;
 }
 .left_block .title {
 	width: 120px;
 }
+
 .right_block .title {
 	width: 138px;
 	line-height: 25px;
@@ -600,51 +643,57 @@ select[name="disk_count"] {
 }
 .right_block .tovar_name .other {
 	width: 104px;
-	padding-left: 48px;
-	margin: 13px 0px 0px -2px;
+	padding-left: 50px;
+	margin: 9px 0px 0px -4px;
 }
 .tovar_name .other .check_block {
-	margin-top: 2px;
+	margin-top: 4px;
 }
 
-.title span {
+.left_block .title span {
 	border: 1px solid #79878d;
 	border-radius: 15px;
 	color: #114165;
-	font-size: 13px;
-	padding: 6px 73px 4px 30px;
+	font-size: 14px;
+	padding: 6px 76px 4px 30px;
 	margin-left: -45px;
 }
-.other span {
-	padding-right: 68px;
-}
+
 .right_block .tovar_name .other span {
 	padding-right: 54px;
 } 
 .title:before {
 	content: " ";
 	position:  absolute;
-	top: 0px;
-	left: 0;
-	height: 9px;
-	width: 9px;
-	border: 7px solid #114165;
+	top: 3px;
+	left: -39px;
+	height: 12px;
+	width: 12px;
+	border: 5px solid #114165;
 	border-radius: 20px;
-	margin: 3px 0px 0px 6px;
 }
-.title ul {
+.right_block .title:before {
+	top: 5px;
+	left: 7px;
+}
+.right_block .other:before {
+	top: 5px;
+	left: 9px;
+}
+.left_block .title ul {
 	width: 130px;
-	margin: -4px 0px -2px -9px;
+	margin: -4px 0px -4px -6px;
 }
 
 .title ul li {
-	margin: 2px 4px 0px 10px;
+	margin: 0px 4px 0px 10px;
 }
 .tovar_name a {
 	color: #465961;
 	font-size: 13px;
 	line-height: 22px;
-	letter-spacing: -0.04em;
+	letter-spacing: -0.00em;
+	font-weight: normal;
 	padding-left: 3px;
 }
 .left_block .title  ul li:before {
@@ -662,20 +711,24 @@ select[name="disk_count"] {
 	font-size: 14px;
 	font-weight: bold;
 	font-style: italic;
+	letter-spacing: -0.00em;
 	text-decoration: underline;
 }
 .right_block .title span {
 	border: 1px solid #79878d;
-	border-radius: 20px;
+	border-radius: 13px;
 	color: #114165;
-	font-size: 13px;
-	padding: 6px 59px 4px 30px;
+	font-size: 14px;
+	padding: 4px 59px 5px 30px;
 	margin-left: -45px;
+	letter-spacing: 0.024em;
 }
 .right_block label {
+	padding: 0px 0px 0px 6px;
 	color: #465961;
 	font-size: 13px;
 	line-height: 1.2em;
+	letter-spacing: 0.00em;
 	vertical-align: middle;
 }
 .right_block input {
@@ -683,16 +736,18 @@ select[name="disk_count"] {
 	vertical-align: middle;
 }
 .right_block .check_block {
-	margin-left: -45px;
+	margin-left: -46px;
+	margin-top: 2px;
 }
 .right_block input[type="submit"] {
 	color: #e5e9ea;
 	font-family: arial;
-	font-size: 11px;
+	font-size: 12px;
 	border: 1px solid #a7abae;
 	border-radius: 12px;
-	margin: 18px 0px 0px 25px;
-	padding: 5px 15px 6px 15px;
+	letter-spacing: 0.01em;
+	margin: 17px 0px 0px 25px;
+	padding: 5px 12px 6px 12px;
 }
 
 /*-------BLOCK TOVAR----------*/
@@ -742,138 +797,53 @@ select[name="disk_count"] {
 	border-radius: 6px;
 	width: 137px;
 	height: 127px;
-	margin: 1px 0px 0px 0px;
 }
 .white_fon img {
 	display: block;
 	vertical-align: middle;
-	margin: 6px auto;
 }
 .cost {
 	color: #114165;
 	font-family: arial;
 	font-weight: bold;
 	font-style: italic;
-	text-align: center;
 	font-size: 16px;
-	padding: 2px 0px 0px 17px;
-	letter-spacing: 0.02em;
+}
+.uah {
+	font-size: 14px;
+	vertical-align: baseline;
 }
 /*-------BRENDS LOGO ---------*/
 .brendLogo {
 	position: relative;
-	margin: 0px auto;
-	width: 677px;
+	overflow: hidden;
+	margin-top: 4px;
+	margin-left: 118px;
 }
 .brendLogo li {
 	margin: 0;
 	padding: 0;
-	position: absolute;
-	top:0;
+	float: left;
+	margin: 0px 10px;
 }
-
-.brendLogo li,
 .brendLogo a {
 	display: block;
 	height: 35px;
-	margin: 0px 10px;
-}
-.toyo { 
-	left:-7px;
-	width:85px; 
-	background: url("../img/brend_sprite.png");
-	background-position: 0px 1px; 
-} 
-.toyo:hover {
-	background-position: 0px -39px;
-}
-.brendLogo .bridg { 
-	left: 82px;
-	top: 2px;
-	width: 104px;
-	background: url("../img/brend_sprite.png");
-	background-position: -85px 0px; 
-} 
-.bridg:hover {
-	background-position:-85px -41px;
-}
-
-.contin { 
-	left: 197px;
-	width:82px;
-	background: url("../img/brend_sprite.png");
-	background-position: -192px 0px; 
-} 
-.contin:hover {
-	background-position: -192px -40px;
-}
-
-.brendLogo .couper { 
-	left: 290px;
-	top: -2px;
-	width: 64px;
-	background: url("../img/brend_sprite.png");
-	background-position: -282px 2px; 
-} 
-
-.couper:hover {
-	background-position: -282px -38px;
-}
-
-.brendLogo .avon { 
-	left:  362px;
-	top: -4px;
-	width: 78px;
-	background: url("../img/brend_sprite.png");
-	background-position: -352px 4px; 
-} 
-.avon:hover {
-	background-position: -352px -36px;
-}
-
-.factory { 
-	left: 450px;
-	width: 61px;
-	background: url("../img/brend_sprite.png");
-	background-position: -440px 0px;  
-} 
-.factory:hover {
-	background-position: -440px -40px;
-}
-.brendLogo .pirelli { 
-	left: 520px;
-	top: -3px;
-	width: 64px;
-	background: url("../img/brend_sprite.png");
-	background-position: -502px 4px;  
-} 
-.pirelli:hover {
-	background-position:-502px -36px;
-}	
-
-.brendLogo .dunlop { 
-	left: 594px;
-	top: -3px;
-	width: 74px;
-	background: url("../img/brend_sprite.png");
-	background-position: -568px 4px;
-} 
-.dunlop:hover {
-	background-position: -568px -36px;
+	background: url("../img/brend_sprite.png") 0 0 no-repeat;
 }
 
 /*----------FOOTER-----------*/
 footer {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	height: 100px;
-	margin-top: -100px;
+	height: 110px;
+	width: 910px;
+	margin-top: -110px;
 	background: #213a4d;
 	border: 1px solid #242a3c;
 }
 footer ul {
-	margin: 5px 0px 13px 12px;
-	text-align: center;
+	margin: 4px 0px 12px 296px;
 }
 
 footer li {
@@ -881,11 +851,12 @@ footer li {
 	vertical-align: top;
 	text-align: center;
 }
+
 footer li a {
 	color: #bec6c9;
 	font-size: 12px;
 	font-family: arial;
-	padding: 0px 14px 0px 10px;
+	padding: 0px 11px 0px 14px;
 	border-right: 2px solid #6a7b87;
 }
 footer li:last-child a {
